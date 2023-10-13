@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import Benefits from "./components/Benefits";
 import Classes from "./components/Classes";
 import ContactUs from "./components/ContactUs";
+import Footer from "./components/Footer";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState<SelectedPage>(SelectedPage.Home);
@@ -42,6 +43,7 @@ function App() {
       <ContactUs
         setSelectedPage={setSelectedPage} 
       />
+      <Footer />
     </div>
   )
 }
